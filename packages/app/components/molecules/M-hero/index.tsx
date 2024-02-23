@@ -20,7 +20,7 @@ const M_Hero: React.FC<M_HeroProps> = ({
         <SolitoImage
           style={{
             // position: "absolute",
-            // width: "100%",
+            // widkey={line}th: "100%",
             // height: "100%",
             // resizeMode: "cover",
             // zIndex: -1,
@@ -45,13 +45,13 @@ const M_Hero: React.FC<M_HeroProps> = ({
           }}
         >
           {primaryLines.map((line) => (
-            <View style={{ display: "inline-block" }}>
-              <PrimaryText key={line}>{line}</PrimaryText>
+            <View key={line} style={{ display: "inline-block" }}>
+              <PrimaryText >{line}</PrimaryText>
             </View>
           ))}
           {secondaryLines.map((line) => (
-            <View style={{ display: "inline-block" }}>
-              <SecondaryText key={line}>{line}</SecondaryText>
+            <View key={line} style={{ display: "inline-block" }}>
+              <SecondaryText >{line}</SecondaryText>
             </View>
           ))}
         </YStack>

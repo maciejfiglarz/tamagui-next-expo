@@ -43,11 +43,12 @@ let nextConfig = {
   experimental: {
     // optimizeCss: true,
     scrollRestoration: true,
+  
 
   },
   compiler: {
     // Enables the styled-components SWC transform
-    styledComponents: true
+    // styledComponents: true
   }
 }
 

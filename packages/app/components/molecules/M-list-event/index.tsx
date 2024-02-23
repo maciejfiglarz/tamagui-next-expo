@@ -11,11 +11,12 @@ import {
   styled,
   themeable,
   useListItem,
+  View,
 } from "tamagui";
 
 import { M_MainTitle } from "../../atoms/M-main-title";
 
-import target from "../../../assets/target.svg";
+import target from "app/assets/target.svg";
 import calendar from "../../../assets/calendar.svg";
 import competence from "../../../assets/competence.svg";
 import badge from "../../../assets/badge.png";
@@ -33,31 +34,32 @@ const M_ListEvent = () => {
     <>
       <YGroup alignSelf="center" width={"100%"} mt={30} mb={30}>
         <YGroup.Item>
-          <ListItem hoverTheme textAlign="left">
-            {/* <YStack jc="space-between"> */}
-              {/* <XStack jc="space-between">z */}
-                <SolitoImage
-                  style={{ marginRight: 10 }}
-                  src={target}
-                  contentFit="cover"
-                  alt=""
-                />
-                {/* <YStack> */}
-                  <SizableText style={{ fontWeight: 600 }} mb={7} size="$4">
-                    Mycie balkonu
-                  </SizableText>
-                  <SizableText size="$4">
-                    Zmniejszenie zużycia energii przez pranie w niższej
-                    temperaturze aż do 40%
-                  </SizableText>
-                {/* </YStack> */}
-              {/* </XStack> */}
-            {/* </YStack> */}
+          <ListItem
+            hoverTheme
+            textAlign="left"
+            ai={"flex-start"}
+            jc={"flex-start"}
+          >
+            <SolitoImage
+              style={{ marginRight: 10 }}
+              src={target}
+              contentFit="cover"
+              alt=""
+            />
+            <View style={{ flexShrink: "unset" }}>
+              <SizableText style={{ fontWeight: 600 }} mb={7} size="$4">
+                Mycie balkonu
+              </SizableText>
+              <SizableText size="$2">
+                Zmniejszenie zużycia energii przez pranie w niższej temperaturze
+                aż do 40%
+              </SizableText>
+            </View>
           </ListItem>
         </YGroup.Item>
       </YGroup>
 
-      {/* <SizableText size="$4">How to film a multi-million dollar movie scene with only 300 euros without even using CGI</SizableText> */}
+    
 
       <M_MainTitle>Szczegóły</M_MainTitle>
       <SizableText size={"$1"} ta={"left"}>

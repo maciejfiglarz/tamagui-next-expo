@@ -28,7 +28,7 @@ export const config = createTamagui({
       background2: tokens.color.gray5Dark,
       background3: tokens.color.gray8Dark,
       background4: tokens.color.gray11Dark,
-      buttonBackground: "#262626",
+      buttonBackground: "red",
       buttonBackgroundHover: "#333333",
 
       //bordery
@@ -52,7 +52,7 @@ export const config = createTamagui({
       background2: tokens.color.gray5Light,
       background3: tokens.color.gray8Light,
       background4: tokens.color.gray11Light,
-      buttonBackground: "#262626",
+      buttonBackground: "blue",
       buttonBackgroundHover: "#333333",
 
       //bordery
@@ -73,6 +73,6 @@ export const config = createTamagui({
   },
 
 });
-console.log("init tamagui",config );
+// console.log("init tamagui",config.themes );
 // for the compiler to find it
 export default config;

@@ -25,7 +25,7 @@ export function ProviderWeb({
   //   }
   //   return scheme
   // }
-  console.log("theme", theme);
+  console.log("web theme", config);
   return (
     <NextThemeProvider
       skipNextHead

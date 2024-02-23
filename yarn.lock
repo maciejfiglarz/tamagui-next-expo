@@ -3429,6 +3429,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-native/assets-registry@npm:~0.73.1":
+  version: 0.73.1
+  resolution: "@react-native/assets-registry@npm:0.73.1"
+  checksum: e84dc35e4d496069eae7fcb2d812aa8c8e0f304a8dddb4cbe8e3d642a0266255de24fde57528193fb439309aaf24782ba7a0746f2c42a4e4f6bc240b4d589a52
+  languageName: node
+  linkType: hard
+
 "@react-native/codegen@npm:^0.72.7, @react-native/codegen@npm:^0.72.8":
   version: 0.72.8
   resolution: "@react-native/codegen@npm:0.72.8"
@@ -9293,6 +9300,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"expo-image@npm:1.10.6":
+  version: 1.10.6
+  resolution: "expo-image@npm:1.10.6"
+  dependencies:
+    "@react-native/assets-registry": "npm:~0.73.1"
+  peerDependencies:
+    expo: "*"
+  checksum: 6eefcb9c9fba711fd7ad1cb87ef0b97c8b6edab7c2af708fd67db3dc5a7588c18bbecddc98e5e1c9738d571b834cd86aacd7c7283c71e332551029cb1cd758d4
+  languageName: node
+  linkType: hard
+
 "expo-keep-awake@npm:~12.3.0":
   version: 12.3.0
   resolution: "expo-keep-awake@npm:12.3.0"
@@ -9346,6 +9364,7 @@ __metadata:
   resolution: "expo-next-tamagui-monorepo@workspace:."
   dependencies:
     "@biomejs/biome": "npm:1.4.1"
+    expo-image: "npm:1.10.6"
     typescript: "npm:^5.3.3"
   languageName: unknown
   linkType: soft

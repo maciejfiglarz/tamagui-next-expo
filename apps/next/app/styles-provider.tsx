@@ -12,7 +12,6 @@ export function StylesProvider({ children }: { children: React.ReactNode }) {
           dangerouslySetInnerHTML={{ __html: sheet.textContent }}
           id={sheet.id}
         />
-        {/* zaczerpnięte z pages */}
         {/* <script
           key="tamagui-animations-mount"
           dangerouslySetInnerHTML={{
