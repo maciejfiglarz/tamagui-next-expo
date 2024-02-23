@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "expo-next-tamagui-monorepo",
+    "slug": "expo-next-tamagui-monorepo",
+    "version": "0.2.7",
+    "sdkVersion": "49.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "android": {
+      "package": "com.maciejfiglarz.exponexttamaguimonorepo"
+    },
+    "ios": {
+      "bundleIdentifier": "com.maciejfiglarz.exponexttamaguimonorepo"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "yourprojectsname",
+    "slug": "mooply",
+    "scheme": "yourprojectsname",
+    "version": "0.2.7",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "jsEngine": "hermes",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourprojectsname.app",
+      "jsEngine": "jsc",
+      "userInterfaceStyle": "automatic"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.yourprojectsname.app",
+      "userInterfaceStyle": "automatic"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "196f6e63-eeaa-46e4-9868-1d5bc14869ac"
+      },
+      "router": {
+        "origin": "https://expo-next-tamagui-monorepo.vercel.app/"
+      }
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://expo-next-tamagui-monorepo.vercel.app/"
+        }
+      ]
+    ],
+    "owner": "maciejfiglarz"
+  }
+}
